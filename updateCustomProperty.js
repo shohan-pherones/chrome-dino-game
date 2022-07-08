@@ -1,11 +1,11 @@
-export function getCustomProperty(element, prop) {
-  return parseFloat(getComputedStyle(element).getPropertyValue(prop)) || 0;
+export function getCustomProperty(elem, prop) {
+  return parseFloat(getComputedStyle(elem).getPropertyValue(prop)) || 0
 }
 
-export function setCustomProperty(element, prop, value) {
-  element.style.setProperty(prop, value);
+export function setCustomProperty(elem, prop, value) {
+  elem.style.setProperty(prop, value)
 }
 
-export function incrementCustomProperty(element, prop, inc) {
-  setCustomProperty(element, prop, getCustomProperty(element, prop) + inc);
+export function incrementCustomProperty(elem, prop, inc) {
+  setCustomProperty(elem, prop, getCustomProperty(elem, prop) + inc)
 }

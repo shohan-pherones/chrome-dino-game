@@ -10,11 +10,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Press Start 2P", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-family: "Press Start 2P", cursive;
   color: #444;
 }
 
@@ -36,6 +36,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-transform: uppercase;
 }
 
 .hide {
@@ -61,6 +62,6 @@ body {
 .cactus {
   position: absolute;
   left: calc(var(--left) * 1%);
-  height: 30%;
+  height: 25%;
   bottom: 0;
 }
